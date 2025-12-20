@@ -1,7 +1,31 @@
 import subprocess
 
-hosts = ["8.8.8.8", "4.2.2.2"]
+def testarping(host):
+    resultado = subprocess.run(["ping", host])
+    
+    if resultado.returncode == 0:
+        return True
+    else:
+        return False
 
-for ip in hosts:
-   print(f"Testando host {ip}...")
-   subprocess.run(["ping", ip])
+
+ips = input("Digite os hosts separados por vírgula: ")
+hosts = ips.split(",")
+
+# remove espaços extras de cada host
+hosts_limpos = []
+for host in hosts:
+    hosts_limpos.append(host.strip())
+
+
+print("Host | Status")
+
+for host in hosts_limpos:
+    status = testarping(host)
+
+    if status == True:
+        status_texto = "UP"
+    else:
+        status_texto = "DOWN"
+
+    print(f"{host} | {status_texto}")
