@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Poppins, sans-serif;
+    color: rgba(0, 0, 0, 0.718);
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#gerador {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.366);
+}
+
+#tamanho {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#caracteres {
+    accent-color: #2f86e0;
+    width: 20vw;
+    align-self: center;
+}
+
+#senha {
+    height: 6vh;
+    width: 20vw;
+    border-color: rgba(0, 0, 0, 0.174);
+    background-color: #f4f4f4;
+    align-self: center;
+    border-radius: 2rem;
+}
+
+#gerar {
+    align-self: center;
+    color: white;
+    height: 8vh;
+    width: 8vw;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2f86e0;
+}
