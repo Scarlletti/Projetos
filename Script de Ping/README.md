@@ -26,10 +26,12 @@ Ideal para estudos de **redes**, **automação** e **fundamentos de ciberseguran
 
 ## 📊 Exemplo de saída
 
+```
 Host | Status
 8.8.8.8 | UP
 google.com | UP
 192.168.0.1 | DOWN
+```
 
 ---
 
