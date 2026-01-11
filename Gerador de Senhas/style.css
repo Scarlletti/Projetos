@@ -34,6 +34,11 @@ h1 {
     gap: 1rem;
 }
 
+input[type="checkbox"] {
+    accent-color: #b86bff;
+    cursor: pointer;
+}
+
 #tamanho {
     padding: 1rem;
     display: flex;
@@ -42,12 +47,11 @@ h1 {
     gap: 1rem;
 }
 
-#caracteres {
+input[type="range"] {
     accent-color: #b86bff;
     width: 20vw;
     align-self: center;
     cursor: pointer;
-
 }
 
 #senha-gerada {
