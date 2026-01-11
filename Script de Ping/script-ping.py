@@ -1,7 +1,7 @@
 import subprocess
 
 def testarping(host):
-    resultado = subprocess.run(["ping", host])
+    resultado = subprocess.run(["ping", host], stdout=subprocess.DEVNULL)
     
     if resultado.returncode == 0:
         return True
