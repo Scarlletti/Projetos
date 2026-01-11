@@ -28,7 +28,7 @@ h1 {
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.366);
 }
 
-#container {
+#formulario {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -37,6 +37,12 @@ h1 {
 input[type="checkbox"] {
     accent-color: #b86bff;
     cursor: pointer;
+}
+
+#erro {
+    color: red;
+    text-align: center;
+    display: none;
 }
 
 #tamanho {
@@ -79,4 +85,5 @@ input[type="range"] {
     border: none;
     border-radius: 2rem;
     background-color: #b86bff;
+    cursor: pointer;
 }

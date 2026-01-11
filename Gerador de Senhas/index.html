@@ -14,7 +14,7 @@
     </header>
     <main>
         <div id="gerador">
-            <div id="container">
+            <form id="formulario">
                 <div>
                     <input type="checkbox" name="maiúsculas" id="maiusculas"></input>
                     <label for="maiúsculas">Incluir letras maiúsculas</label>
@@ -31,15 +31,16 @@
                     <input type="checkbox" name="números" id="numeros"></input>
                     <label for="números">Incluir números</label>
                 </div>
+                <small id="erro">Você deve selecionar ao menos uma das condições!</small>
                 <div id="tamanho">
                     <label for="caracteres">Tamanho da senha</label>
                     <input type="range" name="caracteres" id="caracteres" min="8" max="20" value="8">
                 </div>
                 <div id="senha-gerada">
                     <input type="text" name="senha" id="senha" readonly>
-                    <input type="button" value="GERAR" id="gerar">
+                    <input type="submit" value="GERAR" id="gerar">
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 </body>
